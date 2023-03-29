@@ -1,0 +1,17 @@
+<%= form_with url: sign_in_path do |f| %>
+
+<div>
+  <%= f.label :email%><br/>
+  <%= f.text_field :email%>
+</div>
+
+<div>
+  <%= f.label :password%><br/>
+  <%= f.password_field :password%><br/>
+  <%= link_to "Forgot you password?", password_reset_path %>
+</div>
+
+<div>
+  <%= f.submit "sign_in"%>
+</div>
+<% end %>
